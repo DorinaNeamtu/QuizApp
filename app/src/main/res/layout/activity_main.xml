@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geography Quiz!"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fill your Name"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/text_title"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name_field"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="1.How many continents are on Earth? "
+            />
+
+        <CheckBox
+            android:id="@+id/check1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Five"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/text1"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/check1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Eight"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/check1_1"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/check1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Seven"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/check1_2"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/check1_3"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="2.How many oceans are on Earth? "
+            />
+
+        <CheckBox
+            android:id="@+id/check2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Three"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/text2"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/check2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Five"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/check2_1"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/check2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Four"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/check2_2"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/check2_3"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="3.Is the Pacific Ocean the largest of Earth's oceans? "
+            />
+        <RadioGroup
+            android:id="@+id/radio0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
+            <RadioButton android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/radio0"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="4. Is Australia the largest of the seven continents? "
+            />
+        <RadioGroup
+            android:id="@+id/radioI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
+            <RadioButton android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:onClick="onRadioButtonClicked1"/>
+            <RadioButton android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:onClick="onRadioButtonClicked1"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/radioI"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="5. Did you enjoyed my quiz?? "
+            />
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/text5"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="submitScore"
+            android:layout_below="@id/simpleSwitch"
+            android:text="Submit Quiz"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/quiz_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit_btn"
+            android:text="Result:"
+            android:textSize="18sp"
+            android:fontFamily="TimesNewRoman"
+            android:textColor="#08088A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+</ScrollView>
